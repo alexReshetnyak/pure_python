@@ -8,7 +8,7 @@ str
 list
 tuple
 set
-dict
+dict # dictionary
 
 # Classes -> custom types
 
