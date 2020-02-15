@@ -1,14 +1,14 @@
 # Fundamental Data types
 # int - all numbers
-int
+int   # integer
 float
 # complex
-bool
-str
-list
-tuple
-set
-dict # dictionary
+bool  # boolean
+str   # string
+list  # like array
+tuple # like list but immutable
+set   # 
+dict  # dictionary, like objects in js
 
 # Classes -> custom types
 

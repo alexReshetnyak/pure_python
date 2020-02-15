@@ -21,7 +21,7 @@ new_list = amazon_cart[1:3]
 print('new_list:', new_list) # ['sunglasses', 'toys'] get slice of old array
 
 amazon_cart2 = amazon_cart
-amazon_cart3 = amazon_cart[:]
+amazon_cart3 = amazon_cart[:] # copy list
 amazon_cart2[0] = 'gum'
 print('amazon_cart2[0]:', amazon_cart2[0]) # gum
 print('amazon_cart[0]:', amazon_cart[0]) # gum amazon_cart == amazon_cart2
