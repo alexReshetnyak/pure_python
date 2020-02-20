@@ -5,7 +5,7 @@ is_licenced = True
 if is_old and is_licenced:
   print("'You are old!':", 'You are old!') # 'You are old!'
 elif is_licenced or is_old:
-  print("'You licenced already':", 'You licenced already') # 'You licenced already' 
+  print("'You licenced already':", 'You licenced already') # 'You licenced already'
 else:
   print("'You are yong':", 'You are yong') # 'You are yong'
 
@@ -68,13 +68,13 @@ is_magician = True
 is_expert = False
 
 if is_magician and is_expert:
-  print(":", 'You are master magician') # 
+  print(":", 'You are master magician') #
 elif is_magician and not is_expert:
   print(":", 'At least you are getting there') # 'At least you are getting there'
 elif not is_magician:
-  print(":", 'You need magic power') # 
-  
-  
+  print(":", 'You need magic power') #
+
+
 print('---------------------------is vs ==--------------------------------')
 # ? == check for equality (with type converting)
 # ? is  check  (without type converting)
@@ -110,4 +110,4 @@ print("[1,2] == [1,2]:", [1,2] == [1,2])  # True
 print("[1,2] is [1,2]:", [1,2] is [1,2])  # False
 
 
-print(":", ) # 
+print(":", ) #

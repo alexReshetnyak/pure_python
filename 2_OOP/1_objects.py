@@ -34,7 +34,65 @@ class PlayerCharacter:
 
 player1 = PlayerCharacter('Alexey', 32)
 player1.run()  # Alexey run
-print("player1.age:", player1.age) # 32
+print("player1.age:", player1.age)  # 32
 
 
-print(":", )
+print('---------------------------ATTRIBUTES AND METHODS--------------------------------')
+# help(player1)
+
+
+class PlayerCharacter2:
+    # * Class object attrebute
+    membership = True
+
+    def __init__(self, name='anonymous', age=0):
+        # if PlayerCharacter2.membership:
+        if self.membership:
+            self.name = name
+            self.age = age
+            self.membership = False
+            self.run()
+
+    def run(self):
+        print(f'{self.name} run')
+        return 'done'
+
+
+player2 = PlayerCharacter2('Alexey', 32)
+print("player2.membership:", player2.membership)  # False
+print("PlayerCharacter2.membership:", PlayerCharacter2.membership)  # True
+
+
+print('---------------------------@classmethod @staticmethod--------------------------------')
+
+
+class PlayerCharacter3:
+
+    def __init__(self, name='anonymous', age=0):
+        self.name = name
+        self.age = age
+
+    @classmethod
+    def adding_things(cls, num1, num2):
+        return num1 + num2
+
+    @classmethod
+    def create_teddy(cls, num1, num2):
+        return cls('Teddy', num1 + num2)
+
+    @staticmethod
+    def adding_things_static(num1, num2):
+        return num1 + num2
+
+player3 = PlayerCharacter3('Tom', 20)
+
+print("player3.adding_things(1,2):", player3.adding_things(1, 2))  # 3
+print("PlayerCharacter3.adding_things(1,2):",
+      PlayerCharacter3.adding_things(1, 2))  # 3
+
+teddy = PlayerCharacter3.create_teddy(5,2)
+print("teddy:", teddy)  # <__main__.PlayerCharacter3 object at 0x7f9bbd915fd0>
+print("teddy.adding_things_static(1,2):", teddy.adding_things_static(1,2))  # 3
+print("PlayerCharacter3.adding_things_static(1,2):", PlayerCharacter3.adding_things_static(1,2))  # 3
+
+print(":", )  #
