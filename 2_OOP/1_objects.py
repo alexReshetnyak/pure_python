@@ -84,15 +84,38 @@ class PlayerCharacter3:
     def adding_things_static(num1, num2):
         return num1 + num2
 
+
 player3 = PlayerCharacter3('Tom', 20)
 
 print("player3.adding_things(1,2):", player3.adding_things(1, 2))  # 3
 print("PlayerCharacter3.adding_things(1,2):",
       PlayerCharacter3.adding_things(1, 2))  # 3
 
-teddy = PlayerCharacter3.create_teddy(5,2)
+teddy = PlayerCharacter3.create_teddy(5, 2)
 print("teddy:", teddy)  # <__main__.PlayerCharacter3 object at 0x7f9bbd915fd0>
-print("teddy.adding_things_static(1,2):", teddy.adding_things_static(1,2))  # 3
-print("PlayerCharacter3.adding_things_static(1,2):", PlayerCharacter3.adding_things_static(1,2))  # 3
+print("teddy.adding_things_static(1,2):",
+      teddy.adding_things_static(1, 2))  # 3
+print("PlayerCharacter3.adding_things_static(1,2):",
+      PlayerCharacter3.adding_things_static(1, 2))  # 3
 
 print(":", )  #
+
+
+print('---------------------------OBJECTS 2--------------------------------')
+
+
+class PlayerCharacter:
+
+    def __init__(self, name='anonymous', age=0):
+        self.name = name
+        self.age = age
+
+    def run(self):
+        return self
+
+
+player = PlayerCharacter('Tom', 20)
+# <__main__.PlayerCharacter object at 0x7feb8a21cd90>
+print("player.run():", player.run())
+# <__main__.PlayerCharacter object at 0x7feb8a21cd90>
+print("player.run().run():", player.run().run())
