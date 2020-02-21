@@ -95,6 +95,3 @@ print('---------------------------POLYMORPHISM--------------------------------')
 
 print("wizard.attack():", wizard.attack())  # Attack with power of 35
 print("archer.attack():", archer.attack())  # Attack with arrows 200
-
-print(":", )
-print(":", )
