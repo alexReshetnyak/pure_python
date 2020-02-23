@@ -1,11 +1,14 @@
-print('---------------------------ENCAPSULATION--------------------------------')
-# * Encapsulation refers to the bundling of data with the methods that operate on that data,
+print('---------------------------ENCAPSULATION------------------------')
+# * Encapsulation refers to the bundling of data with the methods that operate
+# * on that data,
 # * or the restricting of direct access to some of an object's components
 
 
-print('---------------------------ABSTRACTION--------------------------------')
-# * main goal is to handle complexity by hiding unnecessary details from the user.
-# * That enables the user to implement more complex logic on top of the provided abstraction without
+print('---------------------------ABSTRACTION---------------------------')
+# * main goal is to handle complexity by hiding unnecessary details
+# * from the user.
+# * That enables the user to implement more complex logic on top of the
+# * provided abstraction without
 # * understanding or even thinking about all the hidden complexity.
 
 
@@ -23,7 +26,7 @@ player2 = PlayerCharacter2('Tom', 20)
 print("player2.speak():", player2.speak())  # Hi, I am Tom
 
 
-print('---------------------------ABSTRACTION PRIVATE VS PUBLIC METHODS--------------------------------')
+print('---------------------ABSTRACTION PRIVATE VS PUBLIC METHODS---------')
 
 
 class PlayerCharacter3:
@@ -45,7 +48,8 @@ print("player3.speak():", player3.speak)  # Can't speak
 
 
 print('---------------------------INHERITANCE--------------------------------')
-# * Inheritance allows us to define a class that inherits all the methods and properties from another class
+# * Inheritance allows us to define a class that inherits all the methods and
+# * properties from another class
 
 
 class User():
@@ -82,16 +86,16 @@ print("wizard.attack():", wizard.attack())  # Attack with power of 35
 print("archer.attack():", archer.attack())  # Attack with arrows 200
 
 
-print('---------------------------INHERITANCE 2--------------------------------')
+print('---------------------------INHERITANCE 2------------------------------')
 
 print("isinstance(archer, Archer):", isinstance(archer, Archer))  # True
 print("isinstance(archer, User):", isinstance(archer, User))  # True
 print("isinstance(archer, object):", isinstance(archer, object))  # True
 
 
-print('---------------------------POLYMORPHISM--------------------------------')
-# * Objects of different types can be accessed through the same interface.
-# * Each type can provide its own, independent implementation of this interface.
+print('---------------------------POLYMORPHISM------------------------------')
+# * Objects of different types can be accessed through the same interface
+# * Each type can provide its own, independent implementation of this interface
 
 print("wizard.attack():", wizard.attack())  # Attack with power of 35
 print("archer.attack():", archer.attack())  # Attack with arrows 200

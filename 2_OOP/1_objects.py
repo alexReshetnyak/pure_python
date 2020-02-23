@@ -19,7 +19,7 @@ print("type(BigObject):", type(BigObject))  # <class 'type'>
 print("type(obj1):", type(obj1))            # <class '__main__.BigObject'>
 
 
-print('---------------------------CREATING OUR OWN OBJECTS--------------------------------')
+print('---------------------------CREATING OUR OWN OBJECTS-------------------')
 
 
 class PlayerCharacter:
@@ -37,7 +37,7 @@ player1.run()  # Alexey run
 print("player1.age:", player1.age)  # 32
 
 
-print('---------------------------ATTRIBUTES AND METHODS--------------------------------')
+print('---------------------------ATTRIBUTES AND METHODS--------------------')
 # help(player1)
 
 
@@ -63,7 +63,7 @@ print("player2.membership:", player2.membership)  # False
 print("PlayerCharacter2.membership:", PlayerCharacter2.membership)  # True
 
 
-print('---------------------------@classmethod @staticmethod--------------------------------')
+print('---------------------------@classmethod @staticmethod-----------------')
 
 
 class PlayerCharacter3:
@@ -88,15 +88,21 @@ class PlayerCharacter3:
 player3 = PlayerCharacter3('Tom', 20)
 
 print("player3.adding_things(1,2):", player3.adding_things(1, 2))  # 3
-print("PlayerCharacter3.adding_things(1,2):",
-      PlayerCharacter3.adding_things(1, 2))  # 3
+print(
+    "PlayerCharacter3.adding_things(1,2):",
+    PlayerCharacter3.adding_things(1, 2)
+)  # 3
 
 teddy = PlayerCharacter3.create_teddy(5, 2)
 print("teddy:", teddy)  # <__main__.PlayerCharacter3 object at 0x7f9bbd915fd0>
-print("teddy.adding_things_static(1,2):",
-      teddy.adding_things_static(1, 2))  # 3
-print("PlayerCharacter3.adding_things_static(1,2):",
-      PlayerCharacter3.adding_things_static(1, 2))  # 3
+print(
+    "teddy.adding_things_static(1,2):",
+    teddy.adding_things_static(1, 2)
+)  # 3
+print(
+    "PlayerCharacter3.adding_things_static(1,2):",
+    PlayerCharacter3.adding_things_static(1, 2)
+)  # 3
 
 print(":", )  #
 
