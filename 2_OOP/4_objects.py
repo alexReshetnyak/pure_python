@@ -107,5 +107,3 @@ class M(B, A, Z):
 # * <class '__main__.X'>, <class '__main__.Y'>, <class '__main__.Z'>,
 # * <class 'object'>)
 print("M.__mro__:", M.__mro__)
-print(":", )  #
-print(":", )  #
