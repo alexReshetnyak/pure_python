@@ -110,7 +110,7 @@ print(":", )  #
 print('---------------------------OBJECTS 2--------------------------------')
 
 
-class PlayerCharacter:
+class PlayerCharacter4:
 
     def __init__(self, name='anonymous', age=0):
         self.name = name
@@ -120,7 +120,7 @@ class PlayerCharacter:
         return self
 
 
-player = PlayerCharacter('Tom', 20)
+player = PlayerCharacter4('Tom', 20)
 # <__main__.PlayerCharacter object at 0x7feb8a21cd90>
 print("player.run():", player.run())
 # <__main__.PlayerCharacter object at 0x7feb8a21cd90>
