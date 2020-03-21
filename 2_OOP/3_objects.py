@@ -5,8 +5,8 @@ class User():
     def __init__(self, email):
         self.email = email
 
-        def sign_in(self):
-            print('logged in')
+    def sign_in(self):
+        print('logged in')
 
 
 class Wizard(User):

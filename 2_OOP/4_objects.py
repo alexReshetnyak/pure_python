@@ -91,15 +91,15 @@ class Z:
     pass
 
 
-class A(X, Y):
+class A1(X, Y):
     pass
 
 
-class B(Y, Z):
+class B1(Y, Z):
     pass
 
 
-class M(B, A, Z):
+class M(B1, A1, Z):
     pass
 
 
