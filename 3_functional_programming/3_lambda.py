@@ -1,6 +1,6 @@
 from functools import reduce
 
-print('---------------------------LAMBDA EXPRESSIONS--------------------------------')
+print('---------------------------LAMBDA EXPRESSIONS-------------------------')
 # * anonymous function that you use once
 # * and has implicit return
 
@@ -12,7 +12,7 @@ print("list(result2):", list(result2))  # [1, 3]
 print("result3:", result3)  # 6
 
 
-print('---------------------------LAMBDA EXERCISE--------------------------------')
+print('---------------------------LAMBDA EXERCISE----------------------------')
 
 my_list = [5, 4, 3]
 
