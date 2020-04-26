@@ -1,11 +1,11 @@
-print('---------------------------LIST (Array)--------------------------------')
+print('---------------------------LIST (Array)---------------------------')
 li = [1, 2, 3, 4, 5]
 print('li:', li)  # [1, 2, 3, 4, 5]
 print('li[3]:', li[3])  # 4
 # print('li[5]:', li[5]) # ! Error list index out of range
 
 
-print('---------------------------LIST SLICING--------------------------------')
+print('---------------------------LIST SLICING-------------------------')
 # List is mutable
 amazon_cart = [
     'notebooks',
@@ -39,7 +39,7 @@ matrix = [
 print('matrix[0][1]', matrix[0][1])  # 2
 
 
-print('---------------------------LIST METHODS--------------------------------')
+print('---------------------------LIST METHODS----------------------------')
 basket = [1, 2, 3, 4, 5]
 print('len(basket):', len(basket))  # 5
 
@@ -68,12 +68,13 @@ print('basket.clear():', basket.clear())  # None, remove all items from list
 print('basket:', basket)  # []
 
 
-print('---------------------------LIST METHODS 2--------------------------------')
+print('---------------------------LIST METHODS 2-----------------------')
 basket = ['a', 'b', 'c', 'd', 'e', 'e']
 
 print('basket.index("b"):', basket.index('b'))  # 1, find index of value
 
-# print('basket.index("d", 0, 2):', basket.index('d', 0, 2)) # Error, start index, end index where to search
+# Error, start index, end index where to search
+# print('basket.index("d", 0, 2):', basket.index('d', 0, 2))
 # 3, start index, end index where to search
 print('basket.index("d", 0, 8):', basket.index('d', 0, 8))
 
@@ -85,7 +86,7 @@ print('"i" in basket:', "i" in 'hi my name is')  # True
 print('basket.count("e"):', basket.count("e"))  # 2 Count value
 
 
-print('---------------------------LIST METHODS 3--------------------------------')
+print('---------------------------LIST METHODS 3----------------------------')
 basket = ['a', 'b', 'e', 'c', 'd', 'e']
 basket2 = basket.copy()
 
@@ -98,7 +99,7 @@ print('basket.reverse():', basket.reverse())  # None
 print('basket:', basket)  # ['e', 'e', 'd', 'c', 'b', 'a']
 
 
-print('---------------------------LIST PATTERNS--------------------------------')
+print('---------------------------LIST PATTERNS----------------------------')
 
 # ['a', 'b', 'c', 'd', 'e', 'e'], Reverse again and return copy
 print('basket[::-1]:', basket[::-1])
@@ -120,7 +121,7 @@ new_sentence2 = ' '.join(['Hi', 'my', 'name', 'is', 'Alexey'])
 print('new_sentence2:', new_sentence2)  # Hi my name is Alexey
 
 
-print('---------------------------LIST UNPACKING--------------------------------')
+print('---------------------------LIST UNPACKING----------------------------')
 basket = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 a, b, c, *other, d = basket  # *variable_name works like js rest (...rest)
 
