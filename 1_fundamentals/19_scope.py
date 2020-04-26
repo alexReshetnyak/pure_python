@@ -50,7 +50,7 @@ def parent():
 print("parent():", parent())  # 11
 
 
-print('---------------------------GLOBAL KEYWORD--------------------------------')
+print('---------------------------GLOBAL KEYWORD---------------------------')
 
 
 def confusion2(b):
@@ -90,7 +90,7 @@ total = count2(total)
 print("total:", total)  # 2
 
 
-print('---------------------------NONLOCAL KEYWORD--------------------------------')
+print('---------------------------NONLOCAL KEYWORD------------------------')
 
 
 def outer():

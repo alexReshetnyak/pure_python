@@ -1,4 +1,4 @@
-print('---------------------------PURE FUNCTIONS--------------------------------')
+print('---------------------------PURE FUNCTIONS-----------------------------')
 # * 1 same input always gives same output
 # * 2 no side effects, they should only return result
 
